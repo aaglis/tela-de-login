@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --green: #1E9E6A;
+    --green-light: #F3FFF2;;
+    --black: #1A202C;
+    --gray: #656769;
+    --gray-light: #E8E8E8;
+    --white: #FFF;
+    --white-light: #F1F1F1;
+    --input-bg: #F7FAFC;
+}
+
+body {
+  font-family: 'Archivo', sans-serif;
+  background-color: var(--white);
+}
+
+a {
+  opacity: 0.8;
+  transition: .3s;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+.login-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+.login-container .container-img,
+.login-container .content-container {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+}
+
+.container-img img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.content-container .form-content {
+  margin: 0 auto;
+  padding-top: 4rem;
+}
+
+.form-content .text-container {
+  padding: 3rem 0;
+}
+
+.text-container h3 {
+  font-size: 1.4rem;
+  padding-top: 0.3rem;
+}
+
+.form-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input[type="email"],
+form input[type="password"],
+form input[type="submit"],
+form button {
+  width: 350px;
+  height: 55px;
+  border-radius: 5px;
+  border-style: none;
+  margin: 0.5rem 0;
+}
+
+form input[type="email"],
+form input[type="password"] {
+  background-color: var(--input-bg);
+  border: 2px solid var(--white-light);
+  padding-left: 1rem;
+  font-size: 0.95rem;
+}
+
+form .second-options {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem 0;
+  align-items: center;
+  font-weight: 500;
+}
+
+.second-options .radio-container {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.second-options a {
+  text-decoration: none;
+  color: var(--green);
+  transition: .3s;
+}
+
+form button {
+  background-color: var(--green);
+  font-weight: bold;
+  color: var(--white);
+  font-size: 1.02rem;
+  transition: .3s;
+  opacity: 0.9;
+}
+
+form input[type="submit"] {
+  background-image: url('../images/icons/google-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 3rem;
+  color: var(--white);
+  font-weight: bold;
+  font-size: 1.02rem;
+  background-color: var(--black);
+  transition: .3s;
+  opacity: 0.9;
+}
+
+form button:hover,
+form input[type="submit"]:hover {
+  transform: scale(1.02);
+  opacity: 1;
+}
+
+.content-container .register-option {
+  text-align: center;
+  padding: 2rem 0;
+  font-weight: 500;
+}
+
+.register-option a {
+  text-decoration: none;
+  color: var(--green);
+}

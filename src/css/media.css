@@ -1,0 +1,30 @@
+@media screen and (max-width: 1000px) {
+  .login-container .container-img {
+    display: none;
+  }
+
+  .login-container .content-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .content-container .form-content {
+    padding-top: 2rem;
+  }
+}
+
+@media screen and (max-width:350px) {
+
+  form input[type="email"],
+  form input[type="password"],
+  form input[type="submit"],
+  form button {
+    width: 300px;
+  }
+
+  form input[type="submit"] {
+    background-position-x: 1.8rem;
+  }
+}
